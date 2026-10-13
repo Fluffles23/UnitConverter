@@ -1,0 +1,113 @@
+t = 'UNIT CONVERTER v1.2'
+nt = t.center(80, '=')
+print(nt, '\nType "UChelp()" for general help\nType "List()" for a list of all conversions')
+
+def UChelp():
+    print('Each conversion is set up like this:\nUNIT 1toUNIT 2(# of UNIT 1s)\nfor example: CtoF(100) would give 212.\n\nUNITS:\nMETRIC:\nKM (Kilometer)\nM (Meter)\nCM (Centimeter)\nMM (Millimeter)\nC (Celsius)\nL (Liter)\nKG (Kilogram)\nG (Gram)\nIMPERIAL:\nMI (Mile)\nFT (Foot)\nIN (Inch)\nF (Fahrenheit)\nGAL (US Gallon)\nLB (Pound)\nOZ (Ounce)')
+
+def List():
+    print('Here is a list of all conversions:\n\nMItoKM, KMtoMI\nFTtoM, MtoFT\nINtoCM, CMtoIN\nINtoMM, MMtoIN\nMItoFT, FTtoMI\nFTtoIN, INtoFT\nKMtoM, MtoKM\nMtoCM, CMtoM\nCMtoMM, MMtoCM\nMtoMM, MMtoM\nFtoC, CtoF\nGALtoL, LtoGAL\nLBtoKG, KGtoLB\nOZtoG, GtoOZ\nLBtoOZ, OZtoLB\nKGtoG, GtoKG')
+
+#LENGTH
+
+def MItoKM(n):
+    print(n*1.609, 'Kilometers')
+
+def KMtoMI(n):
+    print(n/1.609, 'Miles')
+
+def MtoFT(n):
+    print(n*3.28, 'Feet')
+
+def FTtoM(n):
+    print(n/3.28, 'Meters')
+
+def CMtoIN(n):
+    print(n*.39, 'Inches')
+
+def INtoCM(n):
+    print(n/.39, 'Centimeters')
+
+def MMtoIN(n):
+    print(n*3.9, 'Inches')
+
+def INtoMM(n):
+    print(n/3.9, 'Millimeters')
+
+def MItoFT(n):
+    print(n*5280, 'Feet')
+
+def FTtoMI(n):
+    print(n/5280, 'Miles')
+
+def FTtoIN(n):
+    print(n*12, 'Inches')
+
+def INtoFT(n):
+    print(n/12, 'Feet')
+
+def KMtoM(n):
+    print(n*1000, 'Meters')
+
+def MtoKM(n):
+    print(n/1000, 'Kilometers')
+
+def MtoCM(n):
+    print(n*100, 'Centimeters')
+
+def CMtoM(n):
+    print(n/100, 'Meters')
+
+def CMtoMM(n):
+    print(n*10, 'Millimeters')
+
+def MMtoCM(n):
+    print(n/10, 'Centimeters')
+
+def MtoMM(n):
+    print(n*1000, 'Millimeters')
+
+def MMtoM(n):
+    print(n/1000, 'Meters')
+
+#TEMP
+
+def FtoC(n):
+    print((n-32)*5/9, 'Degrees Celsius')
+
+def CtoF(n):
+    print(n*9/5+32, 'Degrees Fahrenheit')
+
+#VOLUME
+
+def LtoGAL(n):
+    print(n*.264, 'US Gallons')
+
+def GALtoL(n):
+    print(n/.264, 'Liters')
+
+#WEIGHT
+
+def KGtoLB(n):
+    print(n*2.2046, 'Pounds')
+
+def LBtoKG(n):
+    print(n/2.2046, 'Kilograms')
+
+def GtoOZ(n):
+    print(n*.035, 'Ounces')
+
+def OZtoG(n):
+    print(n/.035, 'Grams')
+
+def LBtoOZ(n):
+    print(n*16, 'Ounces')
+
+def OZtoLB(n):
+    print(n/16, 'Pounds')
+
+def KGtoG(n):
+    print(n*1000, 'Grams')
+
+def GtoKG(n):
+    print(n/1000, 'Kilograms')
